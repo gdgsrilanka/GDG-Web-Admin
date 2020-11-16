@@ -68,7 +68,7 @@
                     </v-col>
 
                     <v-col md="12" xs="12" cols="12" class="pa-1 ma-0">
-                      <v-textarea outlined name="input-7-4" v-model="mailData.msg" label="body"></v-textarea>
+                      <v-textarea outlined name="input-7-4" v-model="mailData.msg" label="Add HTML body"></v-textarea>
                     </v-col>
                   </v-row>
                 </v-form>

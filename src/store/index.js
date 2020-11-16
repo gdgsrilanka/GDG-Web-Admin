@@ -76,16 +76,16 @@ export default new Vuex.Store({
           "Viewer":true
         }
       },
-      // {
-      //   text: 'Email',
-      //   to: '/emails',
-      //   icon: 'mdi-email-outline',
-      //   access: {
-      //     "Super Admin": true,
-      //     "Admin": true,
-      //     "Viewer":false
-      //   }
-      // },
+      {
+        text: 'Email',
+        to: '/emails',
+        icon: 'mdi-email-outline',
+        access: {
+          "Super Admin": true,
+          "Admin": true,
+          "Viewer":false
+        }
+      },
       {
         text: 'User Manangment',
         to: '/roles',

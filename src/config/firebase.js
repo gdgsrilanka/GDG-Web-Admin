@@ -6,7 +6,7 @@ import 'firebase/messaging';
 import 'firebase/functions';
 
 const firebaseConfig = {
- 
+
 };
 
 firebase.initializeApp(firebaseConfig);

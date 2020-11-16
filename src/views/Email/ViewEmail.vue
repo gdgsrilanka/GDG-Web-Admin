@@ -116,32 +116,8 @@
               <v-row class="px-3 py-5">
                 <v-col>
                   <p class="googl-font" style="font-size:130%"><b>{{mailData.title}}</b></p>
-                  <p class="google-font">{{mailData.msg}}</p>
-                  <v-btn v-if="mailData.url.length>0" color="primary" :href="mailData.url" target="_blank" depressed>{{mailData.urlname}}</v-btn>
-
-                  <p class="google-font mt-5 mb-0" v-if="generalConfig.becomemember" style="font-size:110%">Become a member: <a :href="generalConfig.becomemember" target="_blank">{{generalConfig.becomemember}}</a> </p>
-                  <p v-if="generalConfig.learnMoreLink" class="google-font mt-0 mb-5" style="font-size:110%">To more about our community: <a :href="generalConfig.learnMoreLink" target="_blank">{{generalConfig.learnMoreLink}}</a></p>
-
-                  <p class="google-font mt-5 mb-0" style="font-size:110%">Regards,</p>
-                  <p class="google-font mt-0" style="font-size:110%">Team {{generalConfig.name.length?generalConfig.name:'Arua'}}</p>
+                  <dev v-html=mailData.msg></dev>   
                 </v-col>
-              </v-row>
-              <v-row class="py-5" style="background-color:#4285F4">
-                <v-col class="text-center">
-                  <v-img width="15%" style="margin-left:auto;margin-right:auto" src="https://lh5.googleusercontent.com/qXNUtfa-s4_ahcnkh6ju_pgYhtJkrtpz76MelAqKZ3ZiXxMaDAiQ1n812rFkWdFYY9UTNyJsmJc5HmpZmi6UwVGkKCUfshPjlTucBDz-OIp4teVoYIc6s2D5hY4GhbXtQ5Th3TNs" ></v-img>
-                  <!-- {{generalConfig.socialLinks}} -->
-
-                  <div class="text-center mt-3">
-                    <a v-if="generalConfig.meetupLink" :href="generalConfig.meetupLink" class="google-font mr-3" style="color:white;text-decoration:none;font-size:110%">Meetup</a>
-                    <a v-if="generalConfig.socialLinks.facebook" :href="generalConfig.socialLinks.facebook" class="google-font mr-3" style="color:white;text-decoration:none;font-size:110%">Facebook</a>
-                    <a v-if="generalConfig.socialLinks.twitter" :href="generalConfig.socialLinks.twitter" class="google-font mr-3" style="color:white;text-decoration:none;font-size:110%">Twitter</a>
-                    <a v-if="generalConfig.socialLinks.linkedin" :href="generalConfig.socialLinks.linkedin" class="google-font mr-3" style="color:white;text-decoration:none;font-size:110%">LinkedIn</a>
-                    <a v-if="generalConfig.socialLinks.github" :href="generalConfig.socialLinks.github" class="google-font mr-3" style="color:white;text-decoration:none;font-size:110%">Github</a>
-                    <a v-if="generalConfig.socialLinks.instagram" :href="generalConfig.socialLinks.instagram" class="google-font mr-3" style="color:white;text-decoration:none;font-size:110%">Instagram</a>
-                  </div>
-                </v-col>
-                
-
               </v-row>
             </v-container>
           </v-col>
