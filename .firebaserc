@@ -1,0 +1,17 @@
+{
+  "projects": {
+    "default": "gdg-lk-web-33f3c"
+  },
+  "targets": {
+    "gdg-lk-web-33f3c": {
+      "hosting": {
+        "admin-gdg-lk-web": [
+          "dist"
+        ],
+        "admin": [
+          "admin-gdg-lk-web"
+        ]
+      }
+    }
+  }
+}
